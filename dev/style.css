@@ -1,0 +1,10 @@
+h1 {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+#rock-button {
+    color: blueviolet;
+    background-image: url("images/icon-rock.svg");
+    size: initial;
+}
