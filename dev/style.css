@@ -1,10 +1,56 @@
+html{
+    scroll-behavior: smooth; 
+    /*1rem = 10px*/
+    font-size: 62.5%;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: unset;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(214, 47%, 23%);
+}
+
 h1 {
-    border: 1px solid black;
+    border: 3px solid hsl(217, 16%, 45%, 1);
     padding: 15px;
 }
 
 #rock-button {
     color: blueviolet;
     background-image: url("images/icon-rock.svg");
-    size: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+
+#scissor-button {
+    color: blueviolet;
+    background-image: url("images/icon-scissors.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+
+#paper-button {
+    color: blueviolet;
+    background-image: url("images/icon-paper.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+
+#rulesimage {
+    display: none;
 }
