@@ -2,6 +2,8 @@ html{
     scroll-behavior: smooth; 
     /*1rem = 10px*/
     font-size: 62.5%;
+    display: flex;
+    justify-content: center;
 } 
 
 *{
@@ -16,9 +18,30 @@ body{
     background-color: hsl(214, 47%, 23%);
 }
 
-h1 {
+
+#title {
+    display: flex;
     border: 3px solid hsl(217, 16%, 45%, 1);
     padding: 15px;
+}
+
+#title .score {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    background-color: aliceblue;
+    padding: 1rem;
+}
+
+#title .score h1 {
+    margin-bottom: 1.8rem;
+    color: hsl(229, 64%, 46%);
+}
+
+#title .score h2 {
+    justify-content: center;
+    margin-bottom: 0.8rem;
+    font-size: 2.5rem;
 }
 
 #rock-button {
@@ -29,28 +52,30 @@ h1 {
     background-position: center;
     width: 100px;
     height: 100px;
+    border-radius: 5rem;
 }
 
 #scissor-button {
-    color: blueviolet;
     background-image: url("images/icon-scissors.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100px;
     height: 100px;
+    border-radius: 5rem;
 }
 
 #paper-button {
-    color: blueviolet;
     background-image: url("images/icon-paper.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100px;
     height: 100px;
+    border-radius: 5rem;
 }
 
 #rulesimage {
     display: none;
+    justify-content: center;
 }
