@@ -16,6 +16,7 @@ body{
     overflow-x: unset;
     font-family: 'Poppins', sans-serif;
     background-color: hsl(214, 47%, 23%);
+    font-size: 3rem;
 }
 
 
@@ -23,6 +24,7 @@ body{
     display: flex;
     border: 3px solid hsl(217, 16%, 45%, 1);
     padding: 15px;
+    border-radius: 1rem;
 }
 
 #title .score {
@@ -31,11 +33,14 @@ body{
     margin-left: 2rem;
     background-color: aliceblue;
     padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
 }
 
 #title .score h1 {
     margin-bottom: 1.8rem;
     color: hsl(229, 64%, 46%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 #title .score h2 {
@@ -43,6 +48,43 @@ body{
     margin-bottom: 0.8rem;
     font-size: 2.5rem;
 }
+
+#areaGame {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#yourimage {
+    width: 10rem;
+}
+
+.x {
+    margin: 1rem;
+}
+
+#imageadversary {
+    width: 10rem;
+    display: block;
+}
+
+#spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 
 
 #rock-button {
     color: blueviolet;
