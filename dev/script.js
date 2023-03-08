@@ -13,6 +13,7 @@ const loading = document.getElementById("spinner");
 
 const rulesimage = document.getElementById("rulesimage");
 
+
 let placarScore = 0
 
 function updateScoreboard() {
@@ -32,14 +33,13 @@ rockbutton.addEventListener("click", function() {
         loading.style.display = "none"
         imageadversary.style.display = "block"
     }
-    setTimeout(hideloading, 1000)
     let randomValue = Math.floor(Math.random() * 3);
+    setTimeout(hideloading, 1000)
     yourimage.src = "images/icon-rock.svg";
     switch(randomValue) {
         case 0:
             randomValue = "Rock";
             imageadversary.src = "images/icon-rock.svg"
-            randomText.innerHTML = randomValue;
             score.innerHTML = "Draw"
             if (placarScore > 0) {
                 placarScore -= 1;
@@ -49,7 +49,6 @@ rockbutton.addEventListener("click", function() {
         case 1:
             randomValue = "Scissor";
             imageadversary.src = "images/icon-scissors.svg"
-            randomText.innerHTML = randomValue;
             score.innerHTML = "winner";
             placarScore += 1;
             updateScoreboard()
@@ -57,7 +56,6 @@ rockbutton.addEventListener("click", function() {
         case 2:
             randomValue = "Paper";
             imageadversary.src = "images/icon-paper.svg"
-            randomText.innerHTML = randomValue;
             score.innerHTML = "Lost"
             if (placarScore > 0) {
                 placarScore -= 1;
@@ -77,15 +75,14 @@ scissorbutton.addEventListener("click", function() {
         loading.style.display = "none"
         imageadversary.style.display = "block"
     }
-    setTimeout(hideloading, 1000)
     let randomValue = Math.floor(Math.random() * 3);
     yourimage.src = "images/icon-scissors.svg";
+    setTimeout(hideloading, 1000)
 
     switch(randomValue) {
         case 0:
             randomValue = "Rock";
             imageadversary.src = "images/icon-rock.svg"
-            randomText.innerHTML = randomValue;
             score.innerHTML = "Lost"
              if (placarScore > 0) {
                 placarScore -= 1;
@@ -95,7 +92,6 @@ scissorbutton.addEventListener("click", function() {
         case 1:
             randomValue = "Scissor";
             imageadversary.src = "images/icon-scissors.svg"
-            randomText.innerHTML = randomValue;
             score.innerHTML = "Draw"
              if (placarScore > 0) {
                 placarScore -= 1;
@@ -105,7 +101,6 @@ scissorbutton.addEventListener("click", function() {
         case 2:
             randomValue = "Paper";
             imageadversary.src = "images/icon-paper.svg"
-            randomText.innerHTML = randomValue;
             score.innerHTML = "winner"
             placarScore += 1;
             updateScoreboard()
@@ -124,15 +119,14 @@ paperbutton.addEventListener("click", function() {
         loading.style.display = "none"
         imageadversary.style.display = "block"
     }
-    setTimeout(hideloading, 1000)
     yourimage.src = "images/icon-paper.svg";
-
+    
     let randomValue = Math.floor(Math.random() * 3);
+    setTimeout(hideloading, 1000)
     switch(randomValue) {
         case 0:
             randomValue = "Rock";
             imageadversary.src = "images/icon-rock.svg"
-            randomText.innerHTML = randomValue;
             score.innerHTML = "winner"
             placarScore += 1;
             updateScoreboard()
@@ -140,7 +134,6 @@ paperbutton.addEventListener("click", function() {
         case 1:
             randomValue = "Scissor";
             imageadversary.src = "images/icon-scissors.svg"
-            randomText.innerHTML = randomValue;
             score.innerHTML = "Lost";
              if (placarScore > 0) {
                 placarScore -= 1;
@@ -150,7 +143,6 @@ paperbutton.addEventListener("click", function() {
         case 2:
             randomValue = "Paper";
             imageadversary.src = "images/icon-paper.svg"
-            randomText.innerHTML = randomValue;
             score.innerHTML = "Draw"
              if (placarScore > 0) {
                 placarScore -= 1;

@@ -53,8 +53,21 @@ body{
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
+    margin-top: 3rem;
+    border-radius: 1rem;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#Score {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 7rem;
+    justify-content: center;
+}
 
 
 #yourimage {
