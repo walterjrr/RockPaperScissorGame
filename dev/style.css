@@ -101,7 +101,7 @@ body{
 
 #rock-button {
     color: blueviolet;
-    background-image: url("images/icon-rock.svg");
+    background-image: url("images/rock.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -111,7 +111,7 @@ body{
 }
 
 #scissor-button {
-    background-image: url("images/icon-scissors.svg");
+    background-image: url("images/scissor.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -121,7 +121,7 @@ body{
 }
 
 #paper-button {
-    background-image: url("images/icon-paper.svg");
+    background-image: url("images/paper.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
