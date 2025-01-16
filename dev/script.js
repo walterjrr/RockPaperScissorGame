@@ -9,6 +9,8 @@ const yourimage = document.getElementById("yourimage");
 const loading = document.getElementById("spinner");
 const rulesimage = document.getElementById("rulesimage");
 
+let isActiveRules = false
+
 
 let placarScore = 0
 
@@ -87,5 +89,14 @@ rockbutton.addEventListener("click", () => PlayGames("rock"))
 scissorbutton.addEventListener("click", () => PlayGames("scissor"))
 
 rules.addEventListener("click", function () {
-    rulesimage.style.display = "block"
+
+    isActiveRules = !isActiveRules
+
+    if(isActiveRules) {
+        rulesimage.style.display = "block"
+    }else {
+        rulesimage.style.display = "none"
+    }
+
+    
 })
